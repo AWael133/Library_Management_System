@@ -3,6 +3,8 @@ package com.example.Library_Management_System.Controller;
 import com.example.Library_Management_System.Entity.Book;
 import com.example.Library_Management_System.Service.BookService;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -26,7 +28,7 @@ public class BookController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Book> getBookById(@PathVariable @NotNull Long id){
+    public ResponseEntity<Book> getBookById(@PathVariable Long id){
         return ResponseEntity.ok(bookService.getBookById(id));
     }
 
@@ -36,13 +38,13 @@ public class BookController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Book> editBook(@PathVariable @NotNull Long id,
+    public ResponseEntity<Book> editBook(@PathVariable Long id,
                                          @RequestBody @Valid Book book){
         return ResponseEntity.ok(bookService.editBook(id, book));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity deleteBook(@PathVariable @NotNull Long id){
+    public ResponseEntity deleteBook(@PathVariable Long id){
         bookService.deleteBook(id);
         return ResponseEntity.ok().build();
     }
