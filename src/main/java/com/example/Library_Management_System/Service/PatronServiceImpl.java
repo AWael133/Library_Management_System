@@ -3,9 +3,11 @@ package com.example.Library_Management_System.Service;
 import com.example.Library_Management_System.Entity.Patron;
 import com.example.Library_Management_System.Exceptions.EntityNotFoundException;
 import com.example.Library_Management_System.Repository.PatronRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PatronServiceImpl implements PatronService{
 
     String model = "Patron";

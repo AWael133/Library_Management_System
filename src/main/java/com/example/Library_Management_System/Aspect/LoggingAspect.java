@@ -1,12 +1,12 @@
 package com.example.Library_Management_System.Aspect;
 
+import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.eclipse.paho.client.mqttv3.MqttException;
+import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
@@ -16,15 +16,32 @@ import java.util.Arrays;
 @Component
 public class LoggingAspect {
 
-
     Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
-    @Before("within(com.example.Library_Management_System.Service.*)")
+    @Pointcut("within(com.example.Library_Management_System.Service.*)")
+    private void allMethodsOnServices(){}
+
+    @Before("allMethodsOnServices()")
     public void beforeService(JoinPoint joinPoint){
-        logger.info(joinPoint.getKind());
-        logger.info(Arrays.toString(joinPoint.getArgs()));
-        logger.info(joinPoint.toString());
-        logger.info(joinPoint.getThis().toString());
-        logger.info(joinPoint.getTarget().toString());
+        String className = joinPoint.getThis().getClass().getName();
+        String methodName = joinPoint.getSignature().getName();
+        Object[] args = joinPoint.getArgs();
+        logger.info("start %s:%s withArgs %s".formatted(className, methodName, Arrays.toString(args)));
+    }
+
+    @After("allMethodsOnServices()")
+    public void afterService(JoinPoint joinPoint){
+        String className = joinPoint.getThis().getClass().getName();
+        String methodName = joinPoint.getSignature().getName();
+        Object[] args = joinPoint.getArgs();
+        logger.info("finish %s:%s withArgs %s".formatted(className, methodName, Arrays.toString(args)));
+    }
+
+    @AfterThrowing(pointcut = "allMethodsOnServices()", throwing = "exception")
+    public void logException(JoinPoint joinPoint, Throwable exception) {
+        String className = joinPoint.getThis().getClass().getName();
+        String methodName = joinPoint.getSignature().getName();
+        Object[] args = joinPoint.getArgs();
+        logger.error("<<{}.{}() withArgs {} - {}", className, methodName, Arrays.toString(args), exception.getMessage());
     }
 }
