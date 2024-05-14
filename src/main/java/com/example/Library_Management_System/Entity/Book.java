@@ -17,12 +17,12 @@ import org.hibernate.validator.constraints.ISBN;
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
     @NotBlank
-    String title;
-    String author;
-    String publicationYear;
+    private String title;
+    private String author;
+    private String publicationYear;
     @ISBN
-    String ISBN;
+    private String ISBN;
 
 }

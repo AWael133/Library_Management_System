@@ -5,21 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67085c40-5341-4d44-9b3d-5c049775221b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/PatronServiceTest/AddPatronTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/PatronServiceTest/DeletePatronTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/PatronServiceTest/GetPatronTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/PatronServiceTest/GetPatronsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/PatronServiceTest/UpdatePatronTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Aspect/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Aspect/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Controller/BorrowingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Controller/BorrowingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Controller/CustomRestExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Controller/CustomRestExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Entity/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Entity/Borrowing_Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Entity/Borrowing_Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Entity/Patron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Entity/Patron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Repository/BorrowingRecordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Repository/BorrowingRecordRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Repository/PatronRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Repository/PatronRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Service/BorrowingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Service/BorrowingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Service/BorrowingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Service/BorrowingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Service/PatronServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Service/PatronServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/PatronServiceTest/AddPatronTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/PatronServiceTest/AddPatronTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/PatronServiceTest/UpdatePatronTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/PatronServiceTest/UpdatePatronTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Aspect/LoggingAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Aspect/LoggingAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Controller/PatronController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Controller/PatronController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Controller/BorrowingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Controller/BorrowingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Entity/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Entity/Borrowing_Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Entity/Borrowing_Record.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Entity/Patron.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Entity/Patron.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Repository/BorrowingRecordRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Repository/BorrowingRecordRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Repository/PatronRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Repository/PatronRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Service/BorrowingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Service/BorrowingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Service/BorrowingServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Service/BorrowingServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Service/PatronServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/Library_Management_System/Service/PatronServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/Library_Management_System/PatronServiceTest/AddPatronTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/Library_Management_System/PatronServiceTest/AddPatronTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/Library_Management_System/PatronServiceTest/UpdatePatronTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/Library_Management_System/PatronServiceTest/UpdatePatronTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,26 +76,38 @@
     "Application.LibraryManagementSystemApplication.executor": "Debug",
     "JUnit.AddBookTest.addBook.executor": "Run",
     "JUnit.AddBookTest.executor": "Run",
+    "JUnit.AddPatronTest.addPatronWithExistName.executor": "Run",
+    "JUnit.AddUserTest.addUser.executor": "Run",
+    "JUnit.AddUserTest.addUserWithExistUsername.executor": "Run",
     "JUnit.DeleteBookTest.executor": "Run",
+    "JUnit.DeleteUserTest.deleteUser.executor": "Run",
     "JUnit.GetBooksTest.executor": "Run",
+    "JUnit.GetUserTest.getUser.executor": "Run",
+    "JUnit.GetUsersTest.getAllUsers1.executor": "Run",
     "JUnit.PatronServiceTest in Library_Management_System.executor": "Debug",
     "JUnit.UpdateBookTest.editBook.executor": "Run",
+    "JUnit.UpdatePatronTest.editPatronWithExistName.executor": "Run",
     "JUnit.UpdatePatronTest.executor": "Run",
-    "JUnit.java in Library_Management_System.executor": "Run",
+    "JUnit.UpdateUserTest.editUser.executor": "Run",
+    "JUnit.UpdateUserTest.editUserWithExistName.executor": "Debug",
+    "JUnit.UserServiceTst in Library_Management_System.executor": "Run",
+    "JUnit.java in Library_Management_System.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/awael/wael/library_management_system/src/test/java/com/example/Library_Management_System/PatronServiceTest",
+    "last_opened_file_path": "/home/awael/wael/library_management_system/src/test/java/com/example/Library_Management_System/UserServiceTst",
     "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/UserServiceTst" />
+      <recent name="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System" />
       <recent name="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/PatronServiceTest" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.java in Library_Management_System">
+  <component name="RunManager" selected="JUnit.UserServiceTst in Library_Management_System">
     <configuration name="LibraryManagementSystemApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.Library_Management_System.LibraryManagementSystemApplication" />
       <module name="Library_Management_System" />
@@ -96,48 +121,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddUserTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Library_Management_System" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.Library_Management_System.BooksServiceTest.*" />
+          <option name="PATTERN" value="com.example.Library_Management_System.UserServiceTst.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.Library_Management_System.BooksServiceTest" />
-      <option name="MAIN_CLASS_NAME" value="com.example.Library_Management_System.BooksServiceTest.DeleteBookTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.example.Library_Management_System.UserServiceTst" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Library_Management_System.UserServiceTst.AddUserTest" />
+      <option name="METHOD_NAME" value="addUser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PatronServiceTest in Library_Management_System" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Library_Management_System" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/PatronServiceTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UpdatePatronTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UpdateUserTest.editUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Library_Management_System" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.Library_Management_System.PatronServiceTest.*" />
+          <option name="PATTERN" value="com.example.Library_Management_System.UserServiceTst.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.Library_Management_System.PatronServiceTest" />
-      <option name="MAIN_CLASS_NAME" value="com.example.Library_Management_System.PatronServiceTest.UpdatePatronTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.example.Library_Management_System.UserServiceTst" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Library_Management_System.UserServiceTst.UpdateUserTest" />
+      <option name="METHOD_NAME" value="editUser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="java in Library_Management_System" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UpdateUserTest.editUserWithExistName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Library_Management_System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Library_Management_System.UserServiceTst.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.Library_Management_System.UserServiceTst" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Library_Management_System.UserServiceTst.UpdateUserTest" />
+      <option name="METHOD_NAME" value="editUserWithExistName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTst in Library_Management_System" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Library_Management_System" />
       <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/UserServiceTst" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,13 +190,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.LibraryManagementSystemApplication" />
+      <item itemvalue="JUnit.AddUserTest.addUser" />
+      <item itemvalue="JUnit.UpdateUserTest.editUser" />
+      <item itemvalue="JUnit.UpdateUserTest.editUserWithExistName" />
+      <item itemvalue="JUnit.UserServiceTst in Library_Management_System" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.java in Library_Management_System" />
+        <item itemvalue="JUnit.UserServiceTst in Library_Management_System" />
+        <item itemvalue="JUnit.UpdateUserTest.editUserWithExistName" />
+        <item itemvalue="JUnit.AddUserTest.addUser" />
         <item itemvalue="Application.LibraryManagementSystemApplication" />
-        <item itemvalue="JUnit.PatronServiceTest in Library_Management_System" />
-        <item itemvalue="JUnit.UpdatePatronTest" />
-        <item itemvalue="JUnit.DeleteBookTest" />
+        <item itemvalue="JUnit.UpdateUserTest.editUser" />
       </list>
     </recent_temporary>
   </component>
@@ -183,6 +225,26 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Controller/CustomRestExceptionHandler.java</url>
           <line>44</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Security/JWT/JwtTokenVerifierFilter.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Security/JWT/JwtUserNameAndPasswordAuthenticationFilter.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/Library_Management_System/Security/JWT/JwtUserNameAndPasswordAuthenticationFilter.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/example/Library_Management_System/UserServiceTst/UpdateUserTest.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

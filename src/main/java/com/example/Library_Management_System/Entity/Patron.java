@@ -13,8 +13,8 @@ import lombok.*;
 public class Patron {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
     @NotBlank
-    String name;
-    String contactInfo;
+    private String name;
+    private String contactInfo;
 }

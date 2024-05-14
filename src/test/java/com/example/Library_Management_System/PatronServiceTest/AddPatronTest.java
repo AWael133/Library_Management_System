@@ -29,4 +29,12 @@ public class AddPatronTest{
         when(patronRepository.save(patron0)).thenReturn(patron);
         Assert.assertEquals(patron, patronService.addPatron(patron0));
     }
+
+    @Test(expected = RuntimeException.class)
+    @DisplayName("add Patron (duplicate name)")
+    public void addPatronWithExistName(){
+        Patron patron0 = Patron.builder().name("patron1").build();
+        when(patronRepository.existsByName("patron1")).thenReturn(true);
+        patronService.addPatron(patron0);
+    }
 }

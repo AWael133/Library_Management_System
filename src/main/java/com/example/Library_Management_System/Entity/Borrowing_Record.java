@@ -14,11 +14,11 @@ import java.time.LocalDateTime;
 public class Borrowing_Record {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
     @ManyToOne
-    Book book;
+    private Book book;
     @ManyToOne
-    Patron patron;
-    LocalDateTime borrowDate;
-    LocalDateTime returnDate;
+    private Patron patron;
+    private LocalDateTime borrowDate;
+    private LocalDateTime returnDate;
 }

@@ -30,6 +30,8 @@ public class PatronServiceImpl implements PatronService{
     @Override
     public Patron addPatron(Patron patron) {
         patron.setId(null);
+        if(patronRepository.existsByName(patron.getName()))
+            throw new RuntimeException("name already exists");
         return patronRepository.save(patron);
     }
 
@@ -37,6 +39,9 @@ public class PatronServiceImpl implements PatronService{
     public Patron editPatron(Long id, Patron patron) {
         Patron patron0 = patronRepository.findById(id).orElseThrow(() -> new EntityNotFoundException(model));
         patron.setId(patron0.getId());
+
+        if(patronRepository.existsByNameAndIdNot(patron.getName(), patron0.getId()))
+            throw new RuntimeException("name already exists");
         return patronRepository.save(patron);
     }
 
