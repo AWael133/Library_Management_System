@@ -18,12 +18,7 @@ import java.util.Optional;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class UpdateBookTest{
-
-    @Mock
-    private BookRepository bookRepository;
-    @InjectMocks
-    private BookService bookService = new BookServiceImpl(bookRepository);
+public class UpdateBookTest extends BookServiceTest{
 
     @Test
     @DisplayName("edit Book")

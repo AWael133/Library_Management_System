@@ -61,6 +61,7 @@ public class WebSecurityConfig {
                 .addFilterAfter(new JwtTokenVerifierFilter(JWT_KEY), JwtUserNameAndPasswordAuthenticationFilter.class)
                 .authorizeHttpRequests((requests) -> requests
                         .requestMatchers("/api/users").hasRole("ADMIN")
+                        .requestMatchers("/v3/api-docs/**", "/swagger-ui/**").permitAll()
                         .anyRequest().authenticated()
                 );
         return http.build();

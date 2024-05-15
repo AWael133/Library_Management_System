@@ -38,6 +38,8 @@ public class User implements UserDetails {
     private  boolean credentialsNonExpired = true;
     private boolean enabled = true;
     @Override
+    @Transient
+    @JsonIgnore
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> authorities = new ArrayList<>();
         authorities.add(new SimpleGrantedAuthority(role));

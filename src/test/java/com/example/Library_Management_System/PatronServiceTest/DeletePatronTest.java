@@ -19,12 +19,7 @@ import java.util.Optional;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class DeletePatronTest{
-
-    @Mock
-    private PatronRepository patronRepository;
-    @InjectMocks
-    private PatronService patronService = new PatronServiceImpl(patronRepository);
+public class DeletePatronTest extends PatronServiceTest{
 
     @Test
     @DisplayName("delete Patron")

@@ -21,12 +21,7 @@ import java.util.Optional;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class DeleteBookTest{
-
-    @Mock
-    private BookRepository bookRepository;
-    @InjectMocks
-    private BookService bookService = new BookServiceImpl(bookRepository);
+public class DeleteBookTest extends BookServiceTest{
 
     @Test
     @DisplayName("delete Book")

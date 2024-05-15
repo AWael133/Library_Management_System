@@ -17,13 +17,7 @@ import java.util.Optional;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class GetPatronTest {
-
-
-    @Mock
-    private PatronRepository patronRepository;
-    @InjectMocks
-    private PatronService patronService = new PatronServiceImpl(patronRepository);
+public class GetPatronTest extends PatronServiceTest{
 
     @Test
     @DisplayName("get Patron")

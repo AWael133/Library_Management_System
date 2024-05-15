@@ -10,16 +10,12 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.cache.CacheManager;
 
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class AddPatronTest{
-
-    @Mock
-    private PatronRepository patronRepository;
-    @InjectMocks
-    private PatronService patronService = new PatronServiceImpl(patronRepository);
+public class AddPatronTest extends PatronServiceTest{
 
     @Test
     @DisplayName("add Patron")

@@ -19,13 +19,7 @@ import java.util.Optional;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class GetBookTest {
-
-
-    @Mock
-    private BookRepository bookRepository;
-    @InjectMocks
-    private BookService bookService = new BookServiceImpl(bookRepository);
+public class GetBookTest extends BookServiceTest{
 
     @Test
     @DisplayName("get Book")

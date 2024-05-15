@@ -12,6 +12,7 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.cache.CacheManager;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -20,13 +21,7 @@ import java.util.Optional;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class DeleteUserTest {
-
-    @Mock
-    private UserRepository userRepository;
-    private PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(10);;
-    @InjectMocks
-    private UserService userService = new UserServiceImpl(passwordEncoder, userRepository);
+public class DeleteUserTest extends UserServiceTest{
 
     @Test
     @DisplayName("delete User")
