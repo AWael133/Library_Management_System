@@ -1,2 +1,3 @@
-INSERT INTO librarian (userName, password, accountNonExpired, accountNonLocked, credentialsNonExpired, enabled)
-values ('admin', 'admin', 1, 1, 1, 1)
+INSERT INTO librarian (id, username, password)
+VALUES (1, 'admin', '$2y$10$HmWU9Hk2smNYZReMGWdGpOe3BEUyaeJKzkUsJR7T.uu.J3r6sY70K')
+ON DUPLICATE KEY UPDATE username = 'admin';

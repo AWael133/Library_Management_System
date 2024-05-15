@@ -33,10 +33,10 @@ public class User implements UserDetails {
     @NotEmpty
     private String password;
     private String role;
-    private boolean accountNonExpired = true;
-    private boolean accountNonLocked = true;
-    private  boolean credentialsNonExpired = true;
-    private boolean enabled = true;
+//    private boolean accountNonExpired = true;
+//    private boolean accountNonLocked = true;
+//    private  boolean credentialsNonExpired = true;
+//    private boolean enabled = true;
     @Override
     @Transient
     @JsonIgnore
@@ -64,21 +64,21 @@ public class User implements UserDetails {
 
     @Override
     public boolean isAccountNonExpired() {
-        return accountNonExpired;
+        return false;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return accountNonLocked;
+        return false;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return credentialsNonExpired;
+        return false;
     }
 
     @Override
     public boolean isEnabled() {
-        return enabled;
+        return false;
     }
 }
