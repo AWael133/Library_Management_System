@@ -35,7 +35,7 @@ public class BorrowingServiceImpl implements BorrowingService{
                 .patron(patron)
                 .book(book)
                 .borrowDate(LocalDateTime.now()).build();
-        if(!borrowingRecordRepository.existsByBookAndReturnDateIsNull(book))
+        if(borrowingRecordRepository.existsByBookAndReturnDateIsNull(book))
             throw new RuntimeException("Book not available");
 
         borrowingRecordRepository.save(record);

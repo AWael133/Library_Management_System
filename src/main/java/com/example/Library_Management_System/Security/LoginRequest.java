@@ -1,11 +1,11 @@
 package com.example.Library_Management_System.Security;
 
 public class LoginRequest {
-    private String userName;
+    private String username;
     private String password;
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
     public String getPassword() {

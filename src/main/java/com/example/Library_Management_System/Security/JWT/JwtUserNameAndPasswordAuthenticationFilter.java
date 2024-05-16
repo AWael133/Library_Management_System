@@ -6,12 +6,9 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.ServletRequest;
-import jakarta.servlet.ServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -45,7 +42,7 @@ public class JwtUserNameAndPasswordAuthenticationFilter extends UsernamePassword
             LoginRequest userNameAndPassword = new ObjectMapper()
                     .readValue(request.getInputStream(), LoginRequest.class);
             return authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
-                    userNameAndPassword.getUserName(),
+                    userNameAndPassword.getUsername(),
                     userNameAndPassword.getPassword()));
         } catch (IOException e) {
             throw new RuntimeException(e);

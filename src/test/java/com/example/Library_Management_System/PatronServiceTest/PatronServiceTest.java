@@ -6,13 +6,13 @@ import com.example.Library_Management_System.Service.PatronServiceImpl;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.cache.CacheManager;
+import org.springframework.cache.support.SimpleCacheManager;
 
 public class PatronServiceTest {
 
     @Mock
     PatronRepository patronRepository;
-    @Mock
-    CacheManager cacheManager;
+    CacheManager cacheManager = new SimpleCacheManager();
     @InjectMocks
     PatronService patronService = new PatronServiceImpl(cacheManager, patronRepository);
 }

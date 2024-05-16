@@ -6,12 +6,12 @@ import com.example.Library_Management_System.Service.BookServiceImpl;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.cache.CacheManager;
+import org.springframework.cache.support.SimpleCacheManager;
 
 public class BookServiceTest {
     @Mock
     BookRepository bookRepository;
-    @Mock
-    CacheManager cacheManager;
+    CacheManager cacheManager = new SimpleCacheManager();
     @InjectMocks
     BookService bookService = new BookServiceImpl(cacheManager, bookRepository);
 }
